@@ -1,3 +1,6 @@
+/**
+ * Use TypeCounter with the RegisteredFactories.java  * example in this chapter.
+ */
 package practice12;
 import TypeCounter.*;
 import factory.*;
