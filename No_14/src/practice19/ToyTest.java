@@ -39,11 +39,10 @@ public class ToyTest {
         Class c = null;
         try{
             c = Class.forName("practice19.FancyToy");
-        } catch (ClassNotFoundException e){
+        } catch (ClassNotFoundException e) {
             System.out.println("Can't find FancyToy");
             System.exit(1);
         }
-
         Class up = c.getSuperclass();
         Object obj = null;
         try{

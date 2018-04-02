@@ -57,6 +57,7 @@ class DynamicProxyHandler implements InvocationHandler{
         return ans;
     }
 
+    @Override
     public String toString() {
         return methodIntegerMap.toString();
     }
