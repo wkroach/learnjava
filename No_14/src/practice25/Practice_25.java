@@ -5,6 +5,7 @@
  */
 /**
  * 反射虽然牛逼，但是不安全
+ * 可以通过method.setAccessible(true)让即使private方法也能够访问
  */
 package practice25;
 import java.lang.reflect.*;
@@ -26,6 +27,9 @@ class A{
 public class Practice_25 {
     public static void callHidenMethod(Object obj, String methodName) throws Exception{
        Method method = obj.getClass().getDeclaredMethod(methodName);
+        /**
+         * 用setAccessible设置访问权限为true，即使private也可以访问
+         */
        method.setAccessible(true);
        method.invoke(obj);
     }
